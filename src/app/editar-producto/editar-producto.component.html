@@ -1,0 +1,22 @@
+<form (ngSubmit)="editarProducto()">
+    <label for="idProducto">ID Producto:</label>
+    <input type="number" [(ngModel)]="producto.idProducto" name="idProducto" required><br><br>
+  
+    <label for="codigoBarra">Código de Barra:</label>
+    <input type="text" [(ngModel)]="producto.codigoBarra" name="codigoBarra"><br><br>
+  
+    <label for="nombre">Nombre:</label>
+    <input type="text" [(ngModel)]="producto.nombre" name="nombre"><br><br>
+  
+    <label for="marca">Marca:</label>
+    <input type="text" [(ngModel)]="producto.marca" name="marca"><br><br>
+  
+    <label for="categoria">Categoría:</label>
+    <input type="text" [(ngModel)]="producto.categoria" name="categoria"><br><br>
+  
+    <label for="precio">Precio:</label>
+    <input type="number" [(ngModel)]="producto.precio" name="precio"><br><br>
+  
+    <button type="submit">Guardar cambios</button>
+  </form>
+  
